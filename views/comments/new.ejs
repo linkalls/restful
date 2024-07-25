@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comment create page</title>
+    <link rel="stylesheet" href="https://rakucss.netlify.app/raku.css">
+  </head>
+  <body>
+    <h1>comment create page</h1>
+    <form action="/comments" method="post">
+      <section>
+        <label for="username">ユーザー名</label>
+        <input type="text" placeholder="username" name="username" id="username" required />
+      </section>
+      <section><label for="comment">コメント</label> <textarea name="comment" id="comment" cols="30" rows="5" required></textarea> <button>submit</button></section>
+    </form>
+    <a href="/comments">comments index</a>
+  </body>
+</html>

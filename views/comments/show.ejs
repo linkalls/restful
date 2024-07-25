@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コメント詳細</title>
+</head>
+<body>
+  <h1>コメントid = <%= comment.id %></h1>
+  <h2><%= comment.comment %></h2>
+  <a href="/comments">to index</a>
+  <a href="/comments/<%= comment.id %>/edit">edit</a>
+  <form method="post" action="/comments/<%= comment.id %>?_method=DELETE">
+    <button>削除</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comment index</title>
+  </head>
+  <body>
+    <h1>comment index</h1>
+    <ul>
+      <% for(let c of comments) { %> 
+       <li> <%= c.comment %> - <b><%= c.username %></b><a href="/comments/<%= c.id %>">fhh</a></li>
+         <% } %>
+    </ul>
+    <a href="/comments/new">新規作成</a>
+  </body>
+</html>
